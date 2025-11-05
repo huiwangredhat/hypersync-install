@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  Install hypersync:
+  Install-hypersync:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
