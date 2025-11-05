@@ -5,17 +5,17 @@ on:
 jobs:
   Install hypersync:
     runs-on: ubuntu-latest
-      steps:
-        - name: Check out code
-          uses: actions/checkout@v4
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
 
-        - name: Set up Node.js v18
-          uses: actions/setup-node@v4
-          with:
-            node-version: '18' # Use a version compatible with the SDK
+      - name: Set up Node.js v18
+        uses: actions/setup-node@v4
+        with:
+        node-version: '18' # Use a version compatible with the SDK
 
-        - name: Install Hypersync SDK
-          run: npm install -g @hyperproof/hypersync-sdk
+      - name: Install Hypersync SDK
+        run: npm install -g @hyperproof/hypersync-sdk
 
-        - name: Verify Hypersync installation
-          run: hyperproof-cli --version
+      - name: Verify Hypersync installation
+        run: hyperproof-cli --version
